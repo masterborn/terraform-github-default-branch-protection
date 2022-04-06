@@ -1,4 +1,6 @@
-# Github default branch protection
+# terraform-github-default-branch-protection
+
+Resource that allows to declare [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) for repository.
 
 <!-- START_OF_AUTO_GENERATED_SECTION -->
 ## Requirements
@@ -57,3 +59,22 @@ module "some-project-branch-protection" {
 }
 ```
 <!-- END_OF_AUTO_GENERATED_SECTION -->
+
+## Enabling pre-commit hooks
+
+Following pre-commit hooks are provided:
+
+- [terraform-fmt](https://github.com/antonbabenko/pre-commit-terraform#terraform_fmt) to check syntax of terraform
+- [terraform-docs](https://github.com/terraform-docs/terraform-docs) to recreate README.md according to terraform module properties
+- [end-of-file-fixer](https://github.com/pre-commit/pre-commit-hooks#end-of-file-fixer) to ensure that each file ends with newline
+
+### Requirements
+
+- [pre-commit](https://pre-commit.com/#installation)
+
+### Installation
+To install `pre-commit` check .
+
+```bash
+pre-commit install
+```
