@@ -28,7 +28,7 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_repository_name"></a> [repository\_name](#input\_repository\_name) | n/a | `string` | n/a | yes |
+| <a name="input_repository_name"></a> [repository\_name](#input\_repository\_name) | GitHub repository name | `string` | n/a | yes |
 | <a name="input_develop_context"></a> [develop\_context](#input\_develop\_context) | The list of status checks to require in order to merge into develop. Default: no checks. | `list(string)` | `[]` | no |
 | <a name="input_stage_context"></a> [stage\_context](#input\_stage\_context) | The list of status checks to require in order to merge into stage. Default: no checks. | `list(string)` | `[]` | no |
 | <a name="input_master_context"></a> [master\_context](#input\_master\_context) | The list of status checks to require in order to merge into master. Default: no checks. | `list(string)` | `[]` | no |

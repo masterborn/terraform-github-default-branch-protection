@@ -1,5 +1,6 @@
 variable "repository_name" {
-  type = string
+  description = "GitHub repository name"
+  type        = string
 }
 
 variable "develop_context" {
