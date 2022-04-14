@@ -44,7 +44,7 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 ### Basic example
 ```hcl
 module "some-project-branch-protection" {
-  source = "git@github.com:masterborn/terraform-github-default-branch-protection.git?ref=v0.0.0"
+  source = "git@github.com:masterborn/terraform-github-default-branch-protection.git?ref=v1.0.0"
 
   repository_name = module.some-project.repository_name
   use_develop     = true
@@ -56,7 +56,7 @@ module "some-project-branch-protection" {
 ### Example with main branch
 ```hcl
 module "some-project-branch-protection" {
-  source = "git@github.com:masterborn/terraform-github-default-branch-protection.git?ref=v0.0.0"
+  source = "git@github.com:masterborn/terraform-github-default-branch-protection.git?ref=v1.0.0"
 
   repository_name = module.some-project.repository_name
   use_develop     = true
