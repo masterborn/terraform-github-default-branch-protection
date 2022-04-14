@@ -4,5 +4,6 @@ module "some-project-branch-protection" {
   repository_name = module.some-project.repository_name
   use_develop     = true
   use_stage       = true
-  use_master      = true
+  use_master      = false
+  use_main        = true
 }
