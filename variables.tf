@@ -34,15 +34,15 @@ variable "use_develop" {
 
 variable "use_stage" {
   description = "Indicate the existence of a stage branch."
-  default     = true
+  default     = false
 }
 
 variable "use_master" {
   description = "Indicate the existence of a master branch."
-  default     = true
+  default     = false
 }
 
 variable "use_main" {
   description = "Indicate the existence of a main branch."
-  default     = false
+  default     = true
 }
